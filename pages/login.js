@@ -9,11 +9,11 @@ exports.LoginPage = class LoginPage {
 
     }
 
-    async gotoLoginPage(){
+    async gotoLoginPage() {
         await this.page.goto('https://the-internet.herokuapp.com/login');
     }
 
-    async login(username,password){
+    async login(username, password) {
 
         await this.username_textbox.fill(username)
         await this.password_textbox.fill(password)
